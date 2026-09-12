@@ -28,7 +28,7 @@ class DashboardActivity : AppCompatActivity() {
         if (keypass.isNullOrBlank()) {
             Toast.makeText(
                 this,
-                "Unable to load dashboard.",
+                getString(R.string.dashboard_error),
                 Toast.LENGTH_SHORT
             ).show()
             finish()

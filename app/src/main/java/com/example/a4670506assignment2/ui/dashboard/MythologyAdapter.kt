@@ -40,14 +40,27 @@ class MythologyAdapter(
         position: Int
     ) {
         val entity = entities[position]
+        val context = holder.itemView.context
 
         holder.nameTextView.text = entity.name
-        holder.cultureTextView.text = "Culture: ${entity.culture}"
-        holder.domainTextView.text = "Domain: ${entity.domain}"
-        holder.symbolTextView.text = "Symbol: ${entity.symbol}"
-        holder.parentageTextView.text = "Parentage: ${entity.parentage}"
+
+        holder.cultureTextView.text =
+            context.getString(R.string.culture_format, entity.culture)
+
+        holder.domainTextView.text =
+            context.getString(R.string.domain_format, entity.domain)
+
+        holder.symbolTextView.text =
+            context.getString(R.string.symbol_format, entity.symbol)
+
+        holder.parentageTextView.text =
+            context.getString(R.string.parentage_format, entity.parentage)
+
         holder.romanEquivalentTextView.text =
-            "Roman Equivalent: ${entity.romanEquivalent}"
+            context.getString(
+                R.string.roman_equivalent_format,
+                entity.romanEquivalent
+            )
 
         holder.itemView.setOnClickListener {
             onItemClick(entity)

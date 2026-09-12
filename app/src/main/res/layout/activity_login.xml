@@ -3,15 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="32dp">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mythology Explorer"
+        android:text="@string/login_title"
         android:textSize="28sp"
         android:textStyle="bold"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/etUsername"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,8 +24,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:hint="Student ID"
+        android:hint="@string/student_id_hint"
+        android:autofillHints="username"
         android:inputType="text"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitle" />
@@ -34,8 +37,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="First name"
-        android:inputType="text"
+        android:hint="@string/first_name_hint"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etUsername" />
@@ -45,7 +50,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Login"
+        android:text="@string/login_button"
+        app:cornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etPassword" />

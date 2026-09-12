@@ -7,4 +7,11 @@
     <string name="symbol_format">Symbol: %1$s</string>
     <string name="parentage_format">Parentage: %1$s</string>
     <string name="roman_equivalent_format">Roman Equivalent: %1$s</string>
+    <string name="login_title">Mythology Explorer</string>
+    <string name="student_id_hint">Student ID</string>
+    <string name="first_name_hint">First name</string>
+    <string name="login_button">Login</string>
+    <string name="login_error">Please enter your username and password.</string>
+    <string name="login_failed">Login failed. Please check your username and password.</string>
+    <string name="dashboard_error">Unable to load dashboard.</string>
 </resources>
