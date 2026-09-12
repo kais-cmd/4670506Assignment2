@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">4670506Assignment2</string>
+    <string name="dashboard_title">Mythology Dashboard</string>
+    <string name="description_heading">Description</string>
+    <string name="culture_format">Culture: %1$s</string>
+    <string name="domain_format">Domain: %1$s</string>
+    <string name="symbol_format">Symbol: %1$s</string>
+    <string name="parentage_format">Parentage: %1$s</string>
+    <string name="roman_equivalent_format">Roman Equivalent: %1$s</string>
+</resources>
